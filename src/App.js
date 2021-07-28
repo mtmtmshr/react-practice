@@ -5,25 +5,30 @@ import Basic2 from './compornents/Basic2'
 import BasicUseEffect from './compornents/BasicUseEffect'
 import TimerContainer from './compornents/TimerContainer'
 import ApiFetch from './compornents/ApiFetch'
+import AppContext from './contexts/AppContext';
+import B from './compornents/B';
 
 function App() {
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        {/*
-        <Basic1 />
-        <Basic2 />
-        */}
-        {/*<BasicUseEffect />*/}
-        <TimerContainer />
-        <ApiFetch />
-      </header>
-    </div>
+    <AppContext.Provider value={'value from App.js'}>
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Edit <code>src/App.js</code> and save to reload.
+          </p>
+          {/*
+          <Basic1 />
+          <Basic2 />
+          */}
+          {/*<BasicUseEffect />*/}
+          <TimerContainer />
+          <ApiFetch />
+          <B />
+        </header>
+      </div>
+    </AppContext.Provider>
   );
 }
 
