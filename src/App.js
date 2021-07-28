@@ -7,6 +7,7 @@ import TimerContainer from './compornents/TimerContainer'
 import ApiFetch from './compornents/ApiFetch'
 import AppContext from './contexts/AppContext';
 import B from './compornents/B';
+import BasicReducer from './compornents/BasicReducer'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <TimerContainer />
           <ApiFetch />
           <B />
+          <BasicReducer />
         </header>
       </div>
     </AppContext.Provider>
