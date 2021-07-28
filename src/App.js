@@ -4,7 +4,7 @@ import Basic1 from './compornents/Basic1'
 import Basic2 from './compornents/Basic2'
 import BasicUseEffect from './compornents/BasicUseEffect'
 import TimerContainer from './compornents/TimerContainer'
-
+import ApiFetch from './compornents/ApiFetch'
 
 function App() {
 
@@ -21,6 +21,7 @@ function App() {
         */}
         {/*<BasicUseEffect />*/}
         <TimerContainer />
+        <ApiFetch />
       </header>
     </div>
   );
