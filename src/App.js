@@ -50,7 +50,6 @@ function App() {
           {/*<CompB />
           Count {count}
           */}
-          <Memo />
 
         </header>
       </div>
