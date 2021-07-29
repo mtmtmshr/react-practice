@@ -9,7 +9,7 @@ import AppContext from './contexts/AppContext';
 import B from './compornents/B';
 import BasicReducer from './compornents/BasicReducer'
 import CompB from './compornents/CompB'
-
+import Memo from './compornents/Memo'
 import {useReducer} from 'react'
 
 const initialState = 0
@@ -47,8 +47,11 @@ function App() {
           <B />
           */}
           {/* <BasicReducer /> */}
-          <CompB />
+          {/*<CompB />
           Count {count}
+          */}
+          <Memo />
+
         </header>
       </div>
     </AppContext.Provider>
