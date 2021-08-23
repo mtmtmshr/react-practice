@@ -4,7 +4,7 @@ import { Counter } from './features/counter/Counter';
 import './App.css';
 import RenderInput from './RenderInput';
 import FrameworkList from './FrameworkList'
-
+import MockServer from './MockServer'
 
 function App() {
   const output = (text) => {
@@ -58,6 +58,7 @@ function App() {
             Redux Toolkit
           </a>
           ,<span> and </span>
+          <MockServer />
           <a
             className="App-link"
             href="https://react-redux.js.org/"
