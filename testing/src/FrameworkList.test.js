@@ -10,4 +10,19 @@ describe("Rendering the list with props", () => {
         render(<FrameworkList />)
         expect(screen.getByText("No data !")).toBeInTheDocument();
     })
+
+    it("should render list items correctly", () => {
+        const dummyData = [{
+            id: 1, item: "ReactDummy"
+          }, {
+            id: 2, item: "AngularDummy"
+          }, {
+            id: 3, item: "VueDummy"
+          }];
+          render(<FrameworkList frameworks={dummyData} />)
+          const frameworkitems = screen.getAllByRole("listitem").map((ele) => ele.textContent)
+          const dummyItems = dummyData.map((ele)=>ele.item)
+          expect(frameworkitems).toEqual(dummyItems)
+          expect(screen.queryByText("No data !")).toBeNull();
+    })
 })
