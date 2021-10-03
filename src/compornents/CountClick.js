@@ -1,11 +1,13 @@
 import React from 'react'
 
-const CountClick = () => {
+const CountClick = (props) => {
+    const {handleClick, children} = props
+    console.log('clicked', children)
     return (
         <div>
-            
+            <button onClick={handleClick}>{children}</button>
         </div>
     )
 }
 
-export default CountClick
+export default React.memo(CountClick)
